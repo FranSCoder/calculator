@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
+* {
+  margin: 0;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  background-color: #576649;
+  overflow: hidden;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calculator {
+  min-width: 280px;
+  max-width: 280px;
+  position: relative;
+  padding: 10px 30px 30px 30px;
+  background-image: linear-gradient(to right, #363636, floralwhite 5%, floralwhite 95%, #363636 100%);
+  border-radius: 1rem;
+  box-shadow: -10px 10px 30px black;
+}
+#calculator #fullDisplay {
+  padding: 10px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  outline: 3px solid black;
+  background-color: black;
+  width: 100%;
+  min-height: 80px;
+  border-radius: 0.3rem 0.3rem 0 0;
+  color: white;
+}
+#calculator #fullDisplay #display {
+  font-size: 1.3rem;
+  width: 90%;
+  text-align: right;
+}
+#calculator #fullDisplay #formulaScreen {
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: aquamarine;
+  width: 90%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+#calculator .buttonsBox {
+  outline: 3px solid black;
+}
+#calculator button {
+  border: 1px solid darkslategray;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #c2c2c2;
+  font-size: 1rem;
+}
+#calculator .wide {
+  width: 140px;
+}
+#calculator #equals {
+  height: 140px;
+  position: absolute;
+  bottom: 30px;
+  background-color: steelblue;
+}
+#calculator #clear {
+  background-color: lightcoral;
+}
+#calculator .operator {
+  background-color: #8f8f8f;
+}/*# sourceMappingURL=styles.css.map */
